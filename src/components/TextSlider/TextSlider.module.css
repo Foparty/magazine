@@ -1,0 +1,38 @@
+.container {
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  padding: 0.5rem 0;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  white-space: nowrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.textcontainer {
+  display: flex;
+  flex-wrap: nowrap;
+  /* overflow: hidden; */
+  white-space: nowrap;
+  gap: 2rem;
+  animation: sliding 60s linear infinite;
+}
+.message {
+  font-family: var(--ff-700);
+}
+
+.message > span {
+  font-family: var(--ff-light);
+}
+
+@keyframes sliding {
+  0% {
+    transform: translateX(0);
+  }
+  2.5% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

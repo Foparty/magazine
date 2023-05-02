@@ -1,0 +1,43 @@
+.newsletter {
+  width: 23rem;
+  margin-left: auto;
+  margin-right: 1rem;
+  background-color: #f8f8f8;
+  padding: 1.6rem;
+  display: grid;
+}
+
+.title {
+  font-family: var(--ff-600);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.sub {
+  max-width: 14ch;
+  font-family: var(--ff-600);
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.input {
+  width: 100%;
+  display: block;
+  border: none;
+  padding: 0.6rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.button {
+  text-transform: uppercase;
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  border: none;
+  padding: 0.41rem 1rem;
+  font-size: 1rem;
+  font-family: var(--ff-300);
+  display: inline;
+  width: max-content;
+  justify-self: flex-end;
+}

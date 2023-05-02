@@ -1,0 +1,41 @@
+.popular {
+  width: 23rem;
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
+.popular div:not(:last-child) {
+  border-bottom: 1px solid #000;
+}
+.popular div {
+  padding: 1rem 0;
+}
+
+.title {
+  font-family: var(--ff-600);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.section {
+  display: flex;
+  gap: 2rem;
+}
+
+.section > p {
+  font-family: var(--ff-600);
+  font-size: 1.4rem;
+  padding-top: 1rem;
+}
+
+.flex h2 {
+  font-family: var(--ff-500);
+}
+.flex p {
+  font-family: var(--ff-500);
+}
+.flex p span {
+  font-family: var(--ff-300);
+  padding-left: 0.6rem;
+}

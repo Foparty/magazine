@@ -1,0 +1,33 @@
+.magazine {
+  width: 23rem;
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
+.title {
+  font-family: var(--ff-600);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.date {
+  font-family: var(--ff-600);
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.button {
+  text-transform: uppercase;
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  border: none;
+  padding: 0.41rem 1rem;
+  font-size: 1rem;
+  font-family: var(--ff-400);
+}

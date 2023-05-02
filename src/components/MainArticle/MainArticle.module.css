@@ -1,0 +1,55 @@
+.mainarticle {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.title {
+  font-family: var(--ff-700);
+  font-size: clamp(2rem, 10vw - 1rem, 5rem);
+  line-height: 1;
+}
+
+.excerpt {
+  font-family: var(--ff-400);
+}
+
+.data {
+  display: grid;
+  grid-template-columns: repeat(1, 1f);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.subdata {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.datagroup {
+  font-family: var(--ff-400);
+  display: flex;
+  gap: 0.3rem;
+  align-items: baseline;
+}
+.datagroup p {
+  font-family: var(--ff-200);
+  font-size: 0.9rem;
+}
+
+.pill {
+  margin-left: auto;
+  margin-right: 1rem;
+  border: 1px solid var(--clr-dark);
+  padding: 0.31rem 1.1rem;
+  height: min-content;
+  display: block;
+  border-radius: 1rem;
+  line-height: 1;
+}
+
+.cover {
+  grid-area: cover;
+  width: 100%;
+  height: auto;
+}

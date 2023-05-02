@@ -1,0 +1,153 @@
+.title {
+  grid-area: title;
+  font-family: var(--ff-500);
+  font-size: 1.7rem;
+  line-height: 1;
+}
+.excerpt {
+  grid-area: excerpt;
+  max-width: 64ch;
+  margin: 2rem 0;
+}
+.textgroup {
+  grid-area: textgroup;
+  display: flex;
+  gap: 0.5rem;
+}
+.textgroup h4 {
+  font-family: var(--ff-500);
+}
+.dategroup {
+  grid-area: dategroup;
+  display: flex;
+
+  gap: 0.5rem;
+}
+.dategroup h4 {
+  display: none;
+}
+.dategroup p {
+  font-size: 0.9rem;
+  align-self: center;
+}
+.durationagroup {
+  grid-area: durationagroup;
+  display: flex;
+  gap: 0.5rem;
+}
+.durationagroup h4 {
+  font-family: var(--ff-500);
+}
+.pill {
+  width: 100%;
+  grid-area: category;
+  font-size: 0.9rem;
+  text-align: right;
+}
+.pill span {
+  padding: 0.3rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid var(--clr-dark);
+}
+.cover {
+  grid-area: cover;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+  padding: 1.5rem 0;
+}
+
+.card {
+  width: 100%;
+  container-type: inline-size;
+  border: 1px solid var(--clr-dark);
+  padding: 3rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    'dategroup category'
+    'cover cover'
+    'title title'
+    'excerpt excerpt'
+    'textgroup durationagroup';
+}
+
+@media (min-width: 31.7rem) {
+  .card {
+    border: none;
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+@container (min-width: 31.7rem) {
+  .grid {
+    grid-template-columns: 25% 25% 20% 15% 15%;
+    grid-template-areas:
+      'cover title title title title'
+      'cover excerpt excerpt excerpt excerpt'
+      'cover textgroup dategroup durationagroup category';
+  }
+  .cover {
+    padding: 0;
+  }
+  .title {
+    margin-left: 2rem;
+  }
+  .excerpt {
+    margin: 0.4rem 0 0 2rem;
+  }
+  .dategroup h4 {
+    display: inline;
+    font-family: var(--ff-500);
+  }
+  .dategroup p {
+    font-size: 0.9rem;
+    align-self: none;
+  }
+  .dategroup {
+    align-items: center;
+  }
+  .textgroup {
+    align-items: center;
+    margin-left: 2rem;
+  }
+  .durationagroup {
+    align-items: center;
+  }
+  .pill {
+    align-self: center;
+    text-align: right;
+  }
+}
+
+@media (min-width: 65.94rem) {
+  .card {
+    /* border: none; */
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+}
+@container (min-width: 65.94rem) {
+  .grid {
+    grid-template-columns: 50% 15% 15% 10% 10%;
+    grid-auto-rows: fit-content;
+    grid-template-areas:
+      'title excerpt excerpt excerpt excerpt'
+      'title textgroup dategroup durationagroup category'
+      'cover cover cover cover cover';
+  }
+  .title {
+    font-size: clamp(2rem, 10vw - 1rem, 5rem);
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  .cover {
+    object-fit: none;
+    aspect-ratio: 16/9;
+    margin-top: 1rem;
+  }
+}
