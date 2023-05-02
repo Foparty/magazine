@@ -33,23 +33,33 @@
 }
 
 .social {
-  display: flex;
-  gap: 0.4rem;
-  position: relative;
+  display: none;
 }
 
 .divider {
-  color: transparent;
+  display: none;
 }
 
-.social::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: -30%;
-  width: 1rem;
-  height: 1px;
-  background: var(--clr-dark);
-  z-index: 1;
-  transform: translateY(-50%);
+@media (min-width: 31.25rem) {
+  .social {
+    display: flex;
+    gap: 0.4rem;
+    position: relative;
+  }
+  .divider {
+    display: block;
+    color: transparent;
+  }
+
+  .social::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -30%;
+    width: 1rem;
+    height: 1px;
+    background: var(--clr-dark);
+    z-index: 1;
+    transform: translateY(-50%);
+  }
 }
