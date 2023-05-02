@@ -20,15 +20,16 @@ const Frontpage = ({ data }) => {
           {data.slice(1, 7).map((item) => (
             <ArticleCard key={item.id} data={item} />
           ))}
+          <Link to={'/articles'} className={styles.buttonall}>
+            all articles
+            <AiOutlineArrowRight />
+          </Link>
         </div>
         <div className={styles.aside}>
           <FrontAside />
         </div>
       </div>
-      <Link to={'/articles'} className={styles.buttonall}>
-        all articles
-        <AiOutlineArrowRight />
-      </Link>
+
       <div className={styles.divider}></div>
     </div>
   );
