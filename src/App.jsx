@@ -10,16 +10,17 @@ import RootLayout from './layouts/RootLayout/RootLayout';
 import Magazine from './pages/Magazine/Magazine';
 import Podcast from './pages/Podcast/Podcast';
 import Authors from './pages/Authors/Authors';
-import { articles } from '/public/data/articles';
-import { podcasts } from '/public/data/podcasts';
+import { articles } from '../public/data/articles.js';
+import { podcasts } from '../public/data/podcasts.js';
+import { authors } from '../public/data/authors.js';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path={'/'} element={<RootLayout />}>
-      <Route index element={<Frontpage data={articles} podcasts={podcasts} />} />
+      <Route index element={<Frontpage data={articles} podcasts={podcasts} authors={authors} />} />
       <Route path={'magazine'} element={<Magazine data={articles} />} />
-      <Route path={'podcast'} element={<Podcast />} />
-      <Route path={'authors'} element={<Authors />} />
+      <Route path={'podcast'} element={<Podcast data={podcasts} />} />
+      <Route path={'authors'} element={<Authors />} data={authors} />
     </Route>
   )
 );

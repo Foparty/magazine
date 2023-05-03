@@ -23,7 +23,7 @@ const ArticleCard = ({ data }) => {
           <div className={styles.pill}>
             <span>{data.category}</span>
           </div>
-          <img src={data.cover} className={styles.cover} />
+          <img src={data.cover} className={styles.cover} alt={data.title} />
         </div>
       </div>
     </>

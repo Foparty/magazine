@@ -5,8 +5,10 @@ import ArticleCard from '../../components/ArticleCard/ArticleCard';
 import FrontAside from '../../components/FrontAside/FrontAside';
 import { Link } from 'react-router-dom';
 import { AiOutlineArrowRight } from 'react-icons/ai';
+import FrontPodcasts from '../../components/FrontPodcasts/FrontPodcasts.jsx';
+import FrontAuthors from '../../components/FrontAuthors/FrontAuthors.jsx';
 
-const Frontpage = ({ data }) => {
+const Frontpage = ({ data, podcasts, authors }) => {
   console.log(data);
   return (
     <div className={styles.frontpage}>
@@ -30,6 +32,9 @@ const Frontpage = ({ data }) => {
         </div>
       </div>
       <div className={styles.divider}></div>
+      <FrontPodcasts data={podcasts} />
+      <div className={styles.divider}></div>
+      <FrontAuthors data={authors} />
     </div>
   );
 };

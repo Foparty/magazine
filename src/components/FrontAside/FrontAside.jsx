@@ -6,11 +6,11 @@ import NewsletterAside from './NewsletterAside/NewsletterAside';
 
 const FrontAside = () => {
   return (
-    <>
+    <section className={styles.aside}>
       <MagazineAside />
       <PopularAside />
       <NewsletterAside />
-    </>
+    </section>
   );
 };
 

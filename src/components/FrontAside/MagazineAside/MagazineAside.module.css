@@ -1,7 +1,9 @@
 .magazine {
-  width: 23rem;
+  width: min(100% - 2rem, 23rem);
+  /*width: 23rem;*/
   margin-left: auto;
   margin-right: 1rem;
+  margin-bottom: 2rem;
 }
 
 .title {

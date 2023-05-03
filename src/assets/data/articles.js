@@ -17,9 +17,7 @@ import {
   cover7,
   cover8,
   cover9,
-} from '../articles/index.js';
-
-
+} from '/articles';
 
 export const articles = [
   {

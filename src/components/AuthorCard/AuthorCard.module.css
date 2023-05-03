@@ -1,0 +1,65 @@
+.card {
+  width: 100%;
+  container-type: inline-size;
+}
+.grid {
+  padding: 2rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(6, 1fr);
+
+  align-items: center;
+  grid-template-areas: 'avatar name name name name name';
+}
+
+.name {
+  grid-area: name;
+
+  font-family: var(--ff-500);
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.avatar {
+  grid-area: avatar;
+  width: 20vw;
+  max-width: 10rem;
+  height: auto;
+  border-radius: 50%;
+}
+.jobgroup,
+.citygroup {
+  display: none;
+  gap: 1rem;
+  align-items: center;
+}
+.jobgroup h4,
+citygroup h4 {
+  font-family: var(--ff-500);
+  font-size: 0.9rem;
+}
+
+.jobgroup p,
+citygroup p {
+  font-family: var(--ff-300);
+  font-size: 0.8rem;
+}
+
+.jobgroup {
+  grid-area: job;
+}
+.citygroup {
+  grid-area: city;
+}
+
+@container (min-width: 23.43rem) {
+  .jobgroup,
+  .citygroup {
+    display: flex;
+  }
+  .grid {
+    grid-template-areas:
+      'avatar name name name name name'
+      'avatar job job city city .';
+  }
+}

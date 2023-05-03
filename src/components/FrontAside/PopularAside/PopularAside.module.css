@@ -1,7 +1,8 @@
 .popular {
-  width: 23rem;
+  width: min(100% - 2rem, 23rem);
   margin-left: auto;
   margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 
 .popular div:not(:last-child) {
@@ -15,7 +16,7 @@
   font-family: var(--ff-600);
   text-transform: uppercase;
   font-size: 0.9rem;
-  margin-bottom: 2rem;
+  /*margin-bottom: 2rem;*/
 }
 
 .section {

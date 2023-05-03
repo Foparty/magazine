@@ -1,1 +1,1 @@
-export { default as magaziinecover1 } from './magazin-cover.png';
+export { default as magazinecover1 } from './magazin-cover.png';

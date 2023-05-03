@@ -1,3 +1,20 @@
+.card {
+  width: 100%;
+  container-type: inline-size;
+  border: 1px solid var(--clr-dark);
+  padding: 3rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    'dategroup category'
+    'cover cover'
+    'title title'
+    'excerpt excerpt'
+    'textgroup durationagroup';
+}
+
 .title {
   grid-area: title;
   font-family: var(--ff-500);
@@ -58,22 +75,7 @@
   padding: 1.5rem 0;
 }
 
-.card {
-  width: 100%;
-  container-type: inline-size;
-  border: 1px solid var(--clr-dark);
-  padding: 3rem;
-}
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas:
-    'dategroup category'
-    'cover cover'
-    'title title'
-    'excerpt excerpt'
-    'textgroup durationagroup';
-}
+
 
 @media (min-width: 31.7rem) {
   .card {

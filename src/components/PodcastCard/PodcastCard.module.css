@@ -1,0 +1,144 @@
+.card {
+  width: 100%;
+  height: auto;
+  /*padding: 3rem;*/
+  /*border: 1px solid var(--clr-dark);*/
+  container-type: inline-size;
+}
+.grid {
+  padding: 2rem;
+  border: 1px solid var(--clr-dark);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    'img img img'
+    'title title title'
+    'datagroup datagroup datagroup';
+}
+.ordernumber {
+  display: none;
+}
+.imgcontainer {
+  grid-area: img;
+  position: relative;
+}
+.cover {
+  width: 100%;
+  aspect-ratio: 1;
+}
+.imgtitle {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  color: var(--clr-light);
+  font-family: var(--ff-500);
+  line-height: 1.1;
+}
+.imgtitle p {
+  font-family: var(--ff-500);
+  font-size: 0.8rem;
+}
+
+.ep {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  color: var(--clr-light);
+  font-family: var(--ff-500);
+  line-height: 1;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 0.3rem;
+  right: 0.3rem;
+  color: var(--clr-light);
+  font-family: var(--ff-500);
+  font-size: 2rem;
+  line-height: 1;
+}
+.title {
+  grid-area: title;
+  margin-top: 1rem;
+  font-family: var(--ff-500);
+  font-size: 1.5rem;
+  line-height: 1.2;
+  height: 2.2rem;
+}
+
+.datagroup {
+  grid-area: datagroup;
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.dategroup {
+  grid-area: dategroup;
+  display: flex;
+
+  gap: 0.3rem;
+}
+.dategroup h4 {
+  font-family: var(--ff-500);
+  font-size: 0.8rem;
+}
+.dategroup p {
+  font-size: 0.7rem;
+  align-self: center;
+  font-family: var(--ff-400);
+}
+
+.durationagroup {
+  grid-area: durationagroup;
+  display: flex;
+  gap: 0.5rem;
+}
+.durationagroup h4 {
+  font-size: 0.8rem;
+  font-family: var(--ff-500);
+}
+.durationagroup p {
+  font-size: 0.7rem;
+  align-self: center;
+  font-family: var(--ff-400);
+}
+
+.buttonall {
+  margin: 2rem 0;
+  font-family: var(--ff-500);
+  display: none;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+@container (min-width: 60rem) {
+  .grid {
+    align-items: center;
+    border: none;
+  }
+  .card {
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+  .ordernumber {
+    display: block;
+    grid-area: order;
+    font-family: var(--ff-600);
+    text-align: center;
+  }
+  .datagroup {
+    margin: 0;
+  }
+  .buttonall {
+    font-size: 0.7rem;
+    grid-area: button;
+    display: flex;
+    line-height: 1;
+  }
+  .grid {
+    gap: 1rem;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-areas: 'order img img img title title title title title datagroup datagroup datagroup datagroup button';
+  }
+}

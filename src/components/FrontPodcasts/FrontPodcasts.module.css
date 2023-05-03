@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title {
+    font-size: clamp(2rem, 10vw - 1rem, 5rem);
+    font-family: var(--ff-600);
+    text-transform: uppercase;
+}
+.buttonall {
+    margin: 2rem 0;
+    font-family: var(--ff-500);
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.content {
+    margin: 3rem 0;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+
+@media (min-width: 62rem) {
+    .content {
+        grid-template-columns: repeat(3,1fr);
+    }
+}

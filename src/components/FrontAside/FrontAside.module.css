@@ -1,0 +1,18 @@
+.aside {
+  width: 100%;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 42rem) {
+  .aside {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 68rem) {
+    .aside {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

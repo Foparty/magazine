@@ -25,6 +25,9 @@
   gap: 1rem;
   align-items: center;
 }
+.navigation a:first-child {
+  display: none;
+}
 
 .links {
   display: flex;
@@ -41,6 +44,9 @@
 }
 
 @media (min-width: 31.25rem) {
+  .navigation a:first-child {
+    display: block;
+  }
   .social {
     display: flex;
     gap: 0.4rem;
