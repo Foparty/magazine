@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Magazine.module.css';
 import ArticleCard from '../../components/ArticleCard/ArticleCard';
 import Footer from '../../components/Footer/Footer.jsx';
+import { ScrollRestoration } from 'react-router-dom';
 
 const Magazine = ({ data }) => {
   return (
@@ -24,6 +25,7 @@ const Magazine = ({ data }) => {
         </section>
       </div>
       <Footer />
+      <ScrollRestoration />
     </>
   );
 };

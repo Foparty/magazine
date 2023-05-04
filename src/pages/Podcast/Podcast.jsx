@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Podcast.module.css';
 import PodcastCard from '../../components/PodcastCard/PodcastCard.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
+import { ScrollRestoration } from 'react-router-dom';
 
 const Podcast = ({ data }) => {
   return (
@@ -13,6 +14,7 @@ const Podcast = ({ data }) => {
         ))}
       </div>
       <Footer />
+      <ScrollRestoration />
     </>
   );
 };

@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Authors.module.css';
 import AuthorCardMain from '../../components/AuthorCard/AuthorCardMain.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
+import { ScrollRestoration } from 'react-router-dom';
 
 const Authors = ({ data }) => {
   console.log(data);
@@ -16,6 +17,7 @@ const Authors = ({ data }) => {
         </div>
       </div>
       <Footer />
+      <ScrollRestoration />
     </>
   );
 };

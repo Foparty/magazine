@@ -16,12 +16,17 @@ import { authors } from '../public/data/authors.js';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path={'/'} element={<RootLayout />}>
-      <Route index element={<Frontpage data={articles} podcasts={podcasts} authors={authors} />} />
-      <Route path={'magazine'} element={<Magazine data={articles} />} />
-      <Route path={'podcast'} element={<Podcast data={podcasts} />} />
-      <Route path={'authors'} element={<Authors data={authors} />} />
-    </Route>
+    <>
+      <Route path={'/'} element={<RootLayout />}>
+        <Route
+          index
+          element={<Frontpage data={articles} podcasts={podcasts} authors={authors} />}
+        />
+        <Route path={'magazine'} element={<Magazine data={articles} />} />
+        <Route path={'podcast'} element={<Podcast data={podcasts} />} />
+        <Route path={'authors'} element={<Authors data={authors} />} />
+      </Route>
+    </>
   )
 );
 
