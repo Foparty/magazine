@@ -1,12 +1,16 @@
 .header,
 .main {
-  width: min(100% - 2rem, 95rem);
+  width: 100%;
   margin-inline: auto;
 }
 .header {
+  width: min(100% - 2rem, 92rem);
   border-bottom: 1px solid var(--clr-dark);
 }
-
+.main > * {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
 .navbar {
   padding: 1rem 0;
   width: 100%;
