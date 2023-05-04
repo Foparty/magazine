@@ -1,3 +1,7 @@
+.authors {
+    width: min(100% - 2rem, 92rem);
+    margin-inline: auto;
+}
 .header {
     display: flex;
     justify-content: space-between;

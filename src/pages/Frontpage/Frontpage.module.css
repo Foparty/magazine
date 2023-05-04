@@ -11,6 +11,16 @@
   grid-area: one;
 } */
 
+.frontpage > *:nth-child(3){
+  width: min(100% - 2rem, 92rem);
+  margin-inline: auto;
+}
+
+.maingrid {
+  width: min(100% - 2rem, 92rem);
+  margin-inline: auto;
+}
+
 .aside {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -39,6 +49,7 @@
 }
 
 @media (min-width: 68rem) {
+
   .maingrid {
     display: grid;
     gap: 1rem;

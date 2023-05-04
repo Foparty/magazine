@@ -1,3 +1,7 @@
+.magazine {
+  width: min(100% - 2rem, 92rem);
+  margin-inline: auto;
+}
 .maintitle {
   font-family: var(--ff-700);
   font-size: clamp(13vw, 15vw, 17vw);
