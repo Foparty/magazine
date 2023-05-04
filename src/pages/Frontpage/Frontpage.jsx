@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import FrontPodcasts from '../../components/FrontPodcasts/FrontPodcasts.jsx';
 import FrontAuthors from '../../components/FrontAuthors/FrontAuthors.jsx';
+import Footer from '../../components/Footer/Footer.jsx';
 
 const Frontpage = ({ data, podcasts, authors }) => {
   console.log(data);
@@ -35,6 +36,7 @@ const Frontpage = ({ data, podcasts, authors }) => {
       <FrontPodcasts data={podcasts} />
       <div className={styles.divider}></div>
       <FrontAuthors data={authors} />
+      <Footer />
     </div>
   );
 };

@@ -24,6 +24,8 @@
 
 @media (min-width: 62rem) {
     .content {
+        width: 80%;
+        margin-inline: auto;
         grid-template-columns: repeat(2,1fr);
     }
 }

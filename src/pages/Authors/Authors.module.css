@@ -1,0 +1,14 @@
+.maintitle {
+    font-family: var(--ff-700);
+    font-size: clamp(13vw, 15vw, 17vw);
+    text-align: center;
+    line-height: 1.3;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+}
+.content article {
+    margin: 1rem 0;
+}
+.content > article:not(:last-child) {
+    border-bottom: 1px solid #000;
+}

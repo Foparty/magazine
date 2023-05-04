@@ -47,4 +47,11 @@
   .aside {
     grid-template-columns: repeat(1, 1fr);
   }
+  .featuredarticles div {
+    margin: 1rem 0;
+  }
+  .featuredarticles > div:not(:last-child) {
+    border-bottom: 1px solid #000;
+  }
+
 }

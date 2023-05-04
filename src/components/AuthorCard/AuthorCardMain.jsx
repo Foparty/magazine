@@ -1,7 +1,9 @@
 import React from 'react';
-import styles from './AuthorCard.module.css';
+import styles from './AuthorCardMain.module.css';
+import { AiOutlineArrowRight } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
-const AuthorCard = ({ data }) => {
+const AuthorCardMain = ({ data }) => {
   return (
     <article className={styles.card}>
       <div className={styles.grid}>
@@ -16,8 +18,12 @@ const AuthorCard = ({ data }) => {
           <h4>City</h4>
           <p>{data.city}</p>
         </div>
+        <Link to={'#'} className={styles.buttonall}>
+          ABOUT
+          <AiOutlineArrowRight />
+        </Link>
       </div>
     </article>
   );
 };
-export default AuthorCard;
+export default AuthorCardMain;

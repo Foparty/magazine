@@ -1,0 +1,137 @@
+.footer {
+  width: 100%;
+  /*overflow-x: hidden;*/
+  background-color: var(--clr-dark);
+  color: white;
+  position: relative;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--clr-dark);
+  transform: translateX(-90%);
+  z-index: -10;
+}
+.footer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--clr-dark);
+  transform: translateX(90%);
+  z-index: -10;
+}
+.toptext {
+  width: 100%;
+  overflow: hidden;
+  font-family: var(--ff-600);
+  padding: 0.2rem 0;
+}
+.toptext span {
+  margin: 0 1rem;
+}
+
+.cta {
+  padding: 6rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.cta > * {
+  flex: 1;
+}
+
+.ctatext {
+  /*text-align: center;*/
+  margin-inline: auto;
+  max-width: 15ch;
+  font-family: var(--ff-600);
+  font-size: clamp(2rem, 8vw - 1rem, 5rem);
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.signup {
+  text-align: center;
+  width: 100%;
+}
+.signup input {
+  padding: 0.41rem 1rem;
+  margin: 0 2rem;
+}
+.signup button {
+  padding: 0.41rem 1rem;
+  text-transform: uppercase;
+  font-family: var(--ff-500);
+}
+.navsection > *:nth-child(1) {
+  grid-area: one;
+  font-family: var(--ff-500);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.navsection > *:nth-child(2) {
+  grid-area: two;
+}
+.navsection > *:nth-child(3) {
+  grid-area: three;
+}
+.navsection > *:nth-child(4) {
+  grid-area: four;
+}
+.navsection {
+  padding-bottom: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    'one one one'
+    'two three four';
+  justify-content: space-around;
+}
+
+.navsection ul li {
+  margin: 1rem 0;
+}
+
+.copy {
+    text-align: center;
+}
+
+.right {
+    padding: 1rem 0;
+}
+.right > * {
+    margin: 0 .3rem;
+}
+
+@media (min-width: 39rem) {
+  .cta {
+    flex-direction: row;
+    align-items: center;
+  }
+  .signup {
+    text-align: right;
+  }
+  .navsection {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 'one two three four';
+  }
+  .navsection > *:nth-child(1) {
+    font-family: var(--ff-500);
+    text-align: left;
+  }
+
+  .copy {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+  }
+}

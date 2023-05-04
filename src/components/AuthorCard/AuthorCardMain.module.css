@@ -1,0 +1,71 @@
+.card {
+  padding: 1rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 6rem auto;
+  align-items: center;
+  gap: 1rem;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+.name {
+  font-family: var(--ff-500);
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+.citygroup,
+.jobgroup {
+  display: none;
+  gap: 0.4rem;
+}
+.jobgroup h4,
+.citygroup h4 {
+  font-family: var(--ff-500);
+  font-size: 0.9rem;
+  line-height: 0;
+}
+
+.jobgroup p,
+.citygroup p {
+  font-family: var(--ff-300);
+  font-size: 0.8rem;
+  line-height: 0;
+}
+
+.buttonall {
+  justify-self: flex-end;
+  font-family: var(--ff-500);
+  display: none;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+@media (min-width: 25.87rem) {
+  .buttonall {
+    display: flex;
+  }
+  .grid {
+    grid-template-columns: 6rem 10rem auto;
+  }
+}
+
+@media (min-width: 45rem) {
+    .citygroup,
+    .jobgroup {
+        display: flex;
+
+    }
+    .grid {
+        grid-template-columns: 6rem auto 6rem 6rem 6rem;
+    }
+}
+/*
+.citygroup,
+.jobgroup {
+  display: none;
+  gap: 0.4rem;
+}
+*/
