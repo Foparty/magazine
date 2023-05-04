@@ -9,7 +9,7 @@
 
 .categories {
   margin: 2rem 0;
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
 }
@@ -48,6 +48,9 @@
 }
 
 @media (min-width: 56rem) {
+  .categories {
+    display: flex;
+  }
   .articles {
     grid-template-columns: repeat(3, 1fr);
   }
