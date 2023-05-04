@@ -222,6 +222,7 @@ dd {
 }
 body {
   width: 100vw;
+  width: 100dvw;
 
   overflow-x: hidden;
 }
