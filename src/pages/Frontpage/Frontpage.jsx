@@ -23,7 +23,7 @@ const Frontpage = ({ data, podcasts, authors }) => {
           {data.slice(1, 7).map((item) => (
             <ArticleCard key={item.id} data={item} />
           ))}
-          <Link to={'/articles'} className={styles.buttonall}>
+          <Link to={'/magazine'} className={styles.buttonall}>
             all articles
             <AiOutlineArrowRight />
           </Link>
